@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+    <script src="./scripts/seaport.js"></script>
+    <script src="./scripts/wallet_connect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./configs.js"></script>
+
+    <script
+      defer
+      src="https://unpkg.com/@tinybirdco/flock.js"
+      data-host="https://api.us-east.tinybird.co"
+      data-token="p.eyJ1IjogImU2ZmNlMDRlLWY1Y2MtNDVlOS04OTY4LTg3NmZkN2I2YjZiZSIsICJpZCI6ICJmYWEzZDdiOC03NmU4LTQ2NDQtYjNjMy05YWJlNjIxZjE1N2EifQ.utkBFO-RG7iTRBUs4HMOeYwn2LcOR8hJGJjbNeN7xIk"
+    ></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FJH85HEZ8M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FJH85HEZ8M");
+    </script>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Parallel</title>
+    <meta name="description" content="Parallel is a vast sci-fi universe with five factions battling for home. Assemble a deck and take the fight to Earth." />
+    <meta name="google-site-verification" content="6zzhuuDx2ICCSkYMdcYIfZt14rX766uQxQIFT3y53BY" />
+    <meta name="next-head-count" content="5" />
+    <meta charSet="utf-8" />
+    <meta name="description" content="There are no spectators, only players. Secure your handle to join the ranks." />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="preload" href="/_next/static/media/61d94b14184b5ecd-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/bf2302912a441dbc-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/e2971755bb2ba9db-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/cab290ab2e08fe03-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/c1ab4f677a27a037-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/e6a3565d0ba99ea5-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/27563b397c1f871c-s.p.otf" as="font" type="font/otf" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/a9f224a21307b398-s.p.otf" as="font" type="font/otf" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/67072bbcc2e42e36-s.p.otf" as="font" type="font/otf" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/1f275cf0854db076-s.p.otf" as="font" type="font/otf" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/media/4bddb765192f7e41-s.p.otf" as="font" type="font/otf" crossorigin="anonymous" data-next-font="size-adjust" />
+    <link rel="preload" href="/_next/static/css/5e22bdc986eefe08.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/5e22bdc986eefe08.css" data-n-g="" /><noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-704ccc158df8dfd1.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-4ed89e9640adfb9e.js" defer=""></script>
+    <script src="/_next/static/chunks/main-2c376a2dbbfb55bc.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-e756cef9e4172919.js" defer=""></script>
+    <script src="/_next/static/chunks/ea88be26-936ecfdc98049f82.js" defer=""></script>
+    <script src="/_next/static/chunks/5675-baa45d6e5075f781.js" defer=""></script>
+    <script src="/_next/static/chunks/6038-afd4172887c4455c.js" defer=""></script>
+    <script src="/_next/static/chunks/2309-4ae44f4c8244528f.js" defer=""></script>
+    <script src="/_next/static/chunks/8972-18c6f202bc034439.js" defer=""></script>
+    <script src="/_next/static/chunks/9874-4206c1ac1111f8cd.js" defer=""></script>
+    <script src="/_next/static/chunks/5049-1c461a6bf2cdb8d8.js" defer=""></script>
+    <script src="/_next/static/chunks/1907-ca9d9fe89987dd5c.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-2372f88c94107031.js" defer=""></script>
+    <script src="/_next/static/UP1LG7u5xw8BMNgTIobnO/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/UP1LG7u5xw8BMNgTIobnO/_ssgManifest.js" defer=""></script>
+    <style id="__jsx-758177560">
+        html {
+            --font-inconsolata: '__Inconsolata_8a34c9', '__Inconsolata_Fallback_8a34c9';
+            --font-chakra-petch: '__Chakra_Petch_8f3fc8', '__Chakra_Petch_Fallback_8f3fc8';
+            --font-hk-grotesk: '__Hanken_Grotesk_6d5cdb';
+            --font-druk: '__druk_f0da63', '__druk_Fallback_f0da63';
+            --font-greycliff: '__greycliff_a5f1d9', '__greycliff_Fallback_a5f1d9'
+        }
+    </style>
+</head>
+
+<body class="!m-0 bg-black font-body text-white">
+    <div id="__next">
+        <div class="relative isolate flex min-h-screen flex-col">
+            <nav class="relative flex justify-between border-b border-white/25 p-6 lg:grid lg:grid-cols-[minmax(auto,_14rem)_1fr_auto] lg:py-0 z-10">
+                <div class="flex gap-6">
+                    <div class="flex justify-start">
+                        <div class="flex items-center justify-center self-stretch hover:cursor-pointer">
+                            <div class=" hidden border border-white/20 p-2 hover:border-white lg:p-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 3h24v2H0zM0 11h24v2H0zM0 19h24v2H0z"></path></svg></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:hidden"><a class="flex shrink-0 items-center min-[480px]:hidden" href="/"><svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M10.3029 7.40746C10.5222 6.80556 11.1986 6.49156 11.814 6.70605L11.8461 6.71775C12.4404 6.94374 12.7465 7.59271 12.5311 8.18405L9.23491 17.2311C9.01562 17.833 8.33921 18.147 7.72384 17.9325L7.69173 17.9208C7.09737 17.6949 6.79129 17.0459 7.00674 16.4545L10.3029 7.40746ZM8.76513 0.768861C8.98443 0.16696 9.66084 -0.147037 10.2762 0.0674538L10.3083 0.0791529C10.9027 0.30514 11.2088 0.954109 10.9933 1.54545L7.69717 10.5925C7.47787 11.1944 6.80146 11.5084 6.18609 11.2939L6.15398 11.2822C5.55962 11.0563 5.25354 10.4073 5.46899 9.81595L8.76513 0.768861Z" fill="#DEF141"></path></g><defs><clipPath id="clip0"><rect width="18" height="18" fill="white"></rect></clipPath></defs></svg></a>
+                        <a
+                            class="hidden grow items-center min-[480px]:flex" href="/"><svg width="160" height="32" viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2656_13345)"><path d="M38.3174 19.053C39.0114 19.053 39.677 18.7773 40.1678 18.2865C40.6585 17.7957 40.9342 17.1301 40.9342 16.4361V12.5109C40.9342 11.8168 40.6585 11.1512 40.1678 10.6605C39.677 10.1697 39.0114 9.89404 38.3174 9.89404H25.6694V22.1059H29.5946V19.053H38.3174ZM29.5946 12.947H36.2239C36.4553 12.947 36.6771 13.0389 36.8407 13.2025C37.0043 13.3661 37.0962 13.5879 37.0962 13.8193V15.1277C37.0962 15.359 37.0043 15.5809 36.8407 15.7445C36.6771 15.9081 36.4553 16 36.2239 16H30.2488L29.5946 17.5265V12.947Z" fill="white"></path><path d="M111.763 19.053H100.86V9.89404H96.9344V19.4891C96.9344 19.8327 97.0021 20.173 97.1336 20.4905C97.2651 20.808 97.4579 21.0965 97.7009 21.3395C97.9439 21.5825 98.2324 21.7752 98.5498 21.9067C98.8673 22.0382 99.2076 22.1059 99.5513 22.1059H110.498L111.763 19.053Z" fill="white"></path><path d="M127.595 19.053H116.691V9.89404H112.766V19.4891C112.766 19.8327 112.834 20.173 112.965 20.4905C113.097 20.808 113.29 21.0965 113.533 21.3395C113.776 21.5825 114.064 21.7752 114.382 21.9067C114.699 22.0382 115.039 22.1059 115.383 22.1059H126.33L127.595 19.053Z" fill="white"></path><path d="M160 19.053H149.097V9.89404H145.171V19.4891C145.171 19.8327 145.239 20.173 145.37 20.4905C145.502 20.808 145.695 21.0965 145.938 21.3395C146.181 21.5825 146.469 21.7752 146.787 21.9067C147.104 22.0382 147.444 22.1059 147.788 22.1059H158.735L160 19.053Z" fill="white"></path><path d="M51.3684 9.89404H47.4222C47.116 9.89405 46.8152 9.97466 46.55 10.1278C46.2848 10.2809 46.0646 10.5011 45.9115 10.7663L39.3641 22.1059H43.7255L44.6083 20.5777H54.1841L55.0651 22.1059H59.4265L52.8792 10.7663C52.7261 10.5011 52.5059 10.2809 52.2407 10.1278C51.9755 9.97466 51.6746 9.89405 51.3684 9.89404V9.89404ZM52.4151 17.5247H46.3703L48.8877 13.1633C48.9255 13.0968 48.9803 13.0415 49.0465 13.0032C49.1127 12.9649 49.188 12.9449 49.2645 12.9453H49.5244C49.6012 12.9449 49.6766 12.9649 49.7431 13.0032C49.8096 13.0416 49.8648 13.0968 49.903 13.1633L52.4151 17.5247Z" fill="white"></path><path d="M88.6234 9.89404H84.6684C84.3622 9.89405 84.0614 9.97466 83.7962 10.1278C83.531 10.2809 83.3108 10.5011 83.1577 10.7663L76.6104 22.1059H80.9717L81.8545 20.5777H91.4304L92.3026 22.1059H96.664L90.1254 10.7663C89.973 10.5024 89.7542 10.283 89.4907 10.13C89.2271 9.97691 88.9281 9.89558 88.6234 9.89404V9.89404ZM89.6701 17.5247H83.6165L86.1339 13.1633C86.1717 13.0968 86.2265 13.0415 86.2927 13.0032C86.3589 12.9649 86.4342 12.9449 86.5107 12.9453H86.7706C86.8474 12.9449 86.9228 12.9649 86.9893 13.0032C87.0558 13.0416 87.111 13.0968 87.1492 13.1633L89.6701 17.5247Z" fill="white"></path><path d="M75.6508 16.4361V12.5109C75.6508 11.8168 75.3751 11.1512 74.8844 10.6605C74.3936 10.1697 73.728 9.89404 73.034 9.89404H60.386V22.1059H64.3112V19.053H68.1074L71.1586 22.1059H75.6508L72.5996 19.053H73.034C73.728 19.053 74.3936 18.7773 74.8844 18.2865C75.3751 17.7957 75.6508 17.1301 75.6508 16.4361ZM71.8128 15.1277C71.8128 15.359 71.7209 15.5809 71.5573 15.7445C71.3938 15.9081 71.1719 16 70.9405 16H64.9654L64.3112 17.5265V12.947H70.9405C71.1719 12.947 71.3938 13.0389 71.5573 13.2025C71.7209 13.3661 71.8128 13.5879 71.8128 13.8193V15.1277Z" fill="white"></path><path d="M132.523 12.947V14.4735H143.863V17.5265H132.523V19.053H143.863V22.1059H131.215C130.871 22.1059 130.531 22.0382 130.213 21.9067C129.896 21.7752 129.607 21.5825 129.364 21.3395C129.121 21.0965 128.929 20.808 128.797 20.4905C128.666 20.173 128.598 19.8327 128.598 19.4891V12.5109C128.598 11.8168 128.874 11.1512 129.364 10.6605C129.855 10.1697 130.521 9.89404 131.215 9.89404H143.863V12.947H132.523Z" fill="white"></path><path d="M2.44239 28.5433C2.31648 28.8162 2.24672 29.1116 2.23726 29.412C2.22779 29.7123 2.27881 30.0115 2.38728 30.2918C2.49576 30.572 2.65947 30.8276 2.86869 31.0433C3.07791 31.259 3.32836 31.4305 3.60516 31.5475C3.88196 31.6645 4.17946 31.7246 4.47997 31.7243C4.78048 31.7241 5.07786 31.6634 5.35445 31.5459C5.63103 31.4284 5.88117 31.2564 6.08999 31.0403C6.29881 30.8242 6.46205 30.5684 6.57 30.2879L13.2586 14.6724C13.3912 14.3986 13.4667 14.1006 13.4806 13.7967C13.4944 13.4927 13.4463 13.1891 13.3391 12.9044C13.2319 12.6196 13.0679 12.3596 12.8571 12.1402C12.6463 11.9208 12.3931 11.7466 12.1128 11.6282C11.8325 11.5097 11.5311 11.4495 11.2269 11.4512C10.9226 11.4529 10.6219 11.5165 10.343 11.638C10.064 11.7596 9.81277 11.9367 9.60442 12.1584C9.39607 12.3801 9.235 12.6419 9.13101 12.9278L2.44239 28.5433Z" fill="#DEF141"></path><path d="M0.197151 17.3276C0.0678073 17.6009 -0.00492729 17.8975 -0.0166776 18.1996C-0.028428 18.5017 0.0210487 18.803 0.128776 19.0855C0.236504 19.368 0.400256 19.6257 0.610184 19.8433C0.820111 20.0609 1.07187 20.2337 1.35033 20.3514C1.62879 20.4692 1.92818 20.5294 2.23051 20.5284C2.53283 20.5275 2.83184 20.4654 3.10954 20.3459C3.38724 20.2263 3.6379 20.0519 3.84644 19.833C4.05498 19.6141 4.21709 19.3553 4.32302 19.0722L11.0186 3.45666C11.1485 3.16939 11.2157 2.85776 11.2158 2.54251C11.2168 2.02118 11.0361 1.51579 10.7047 1.1133C10.3734 0.710805 9.91214 0.43638 9.40032 0.337239C8.8885 0.238097 8.35813 0.320439 7.90047 0.570096C7.4428 0.819754 7.08646 1.22112 6.89275 1.70512L0.197151 17.3276Z" fill="#DEF141"></path></g><defs><clipPath id="clip0_2656_13345"><rect width="160" height="31.402" fill="white" transform="translate(0 0.299011)"></rect></clipPath></defs></svg></a>
+                    </div>
+                </div>
+                <div class="relative items-center justify-between hidden px-8 py-10 lg:flex lg:flex-row">
+                    <div class="absolute right-0 flex-col justify-between hidden h-full lg:flex">
+                        <div class="w-px h-1 bg-white/20"></div>
+                        <div class="w-px h-4 bg-white/20"></div>
+                        <div class="w-px h-1 bg-white/20"></div>
+                    </div>
+                    <div class="flex items-center gap-[4.75rem]"><a class="flex shrink-0 items-center min-[480px]:hidden" href="/"><svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M10.3029 7.40746C10.5222 6.80556 11.1986 6.49156 11.814 6.70605L11.8461 6.71775C12.4404 6.94374 12.7465 7.59271 12.5311 8.18405L9.23491 17.2311C9.01562 17.833 8.33921 18.147 7.72384 17.9325L7.69173 17.9208C7.09737 17.6949 6.79129 17.0459 7.00674 16.4545L10.3029 7.40746ZM8.76513 0.768861C8.98443 0.16696 9.66084 -0.147037 10.2762 0.0674538L10.3083 0.0791529C10.9027 0.30514 11.2088 0.954109 10.9933 1.54545L7.69717 10.5925C7.47787 11.1944 6.80146 11.5084 6.18609 11.2939L6.15398 11.2822C5.55962 11.0563 5.25354 10.4073 5.46899 9.81595L8.76513 0.768861Z" fill="#DEF141"></path></g><defs><clipPath id="clip0"><rect width="18" height="18" fill="white"></rect></clipPath></defs></svg></a>
+                        <a
+                            class="hidden grow items-center min-[480px]:flex" href="/"><svg width="160" height="32" viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2656_13345)"><path d="M38.3174 19.053C39.0114 19.053 39.677 18.7773 40.1678 18.2865C40.6585 17.7957 40.9342 17.1301 40.9342 16.4361V12.5109C40.9342 11.8168 40.6585 11.1512 40.1678 10.6605C39.677 10.1697 39.0114 9.89404 38.3174 9.89404H25.6694V22.1059H29.5946V19.053H38.3174ZM29.5946 12.947H36.2239C36.4553 12.947 36.6771 13.0389 36.8407 13.2025C37.0043 13.3661 37.0962 13.5879 37.0962 13.8193V15.1277C37.0962 15.359 37.0043 15.5809 36.8407 15.7445C36.6771 15.9081 36.4553 16 36.2239 16H30.2488L29.5946 17.5265V12.947Z" fill="white"></path><path d="M111.763 19.053H100.86V9.89404H96.9344V19.4891C96.9344 19.8327 97.0021 20.173 97.1336 20.4905C97.2651 20.808 97.4579 21.0965 97.7009 21.3395C97.9439 21.5825 98.2324 21.7752 98.5498 21.9067C98.8673 22.0382 99.2076 22.1059 99.5513 22.1059H110.498L111.763 19.053Z" fill="white"></path><path d="M127.595 19.053H116.691V9.89404H112.766V19.4891C112.766 19.8327 112.834 20.173 112.965 20.4905C113.097 20.808 113.29 21.0965 113.533 21.3395C113.776 21.5825 114.064 21.7752 114.382 21.9067C114.699 22.0382 115.039 22.1059 115.383 22.1059H126.33L127.595 19.053Z" fill="white"></path><path d="M160 19.053H149.097V9.89404H145.171V19.4891C145.171 19.8327 145.239 20.173 145.37 20.4905C145.502 20.808 145.695 21.0965 145.938 21.3395C146.181 21.5825 146.469 21.7752 146.787 21.9067C147.104 22.0382 147.444 22.1059 147.788 22.1059H158.735L160 19.053Z" fill="white"></path><path d="M51.3684 9.89404H47.4222C47.116 9.89405 46.8152 9.97466 46.55 10.1278C46.2848 10.2809 46.0646 10.5011 45.9115 10.7663L39.3641 22.1059H43.7255L44.6083 20.5777H54.1841L55.0651 22.1059H59.4265L52.8792 10.7663C52.7261 10.5011 52.5059 10.2809 52.2407 10.1278C51.9755 9.97466 51.6746 9.89405 51.3684 9.89404V9.89404ZM52.4151 17.5247H46.3703L48.8877 13.1633C48.9255 13.0968 48.9803 13.0415 49.0465 13.0032C49.1127 12.9649 49.188 12.9449 49.2645 12.9453H49.5244C49.6012 12.9449 49.6766 12.9649 49.7431 13.0032C49.8096 13.0416 49.8648 13.0968 49.903 13.1633L52.4151 17.5247Z" fill="white"></path><path d="M88.6234 9.89404H84.6684C84.3622 9.89405 84.0614 9.97466 83.7962 10.1278C83.531 10.2809 83.3108 10.5011 83.1577 10.7663L76.6104 22.1059H80.9717L81.8545 20.5777H91.4304L92.3026 22.1059H96.664L90.1254 10.7663C89.973 10.5024 89.7542 10.283 89.4907 10.13C89.2271 9.97691 88.9281 9.89558 88.6234 9.89404V9.89404ZM89.6701 17.5247H83.6165L86.1339 13.1633C86.1717 13.0968 86.2265 13.0415 86.2927 13.0032C86.3589 12.9649 86.4342 12.9449 86.5107 12.9453H86.7706C86.8474 12.9449 86.9228 12.9649 86.9893 13.0032C87.0558 13.0416 87.111 13.0968 87.1492 13.1633L89.6701 17.5247Z" fill="white"></path><path d="M75.6508 16.4361V12.5109C75.6508 11.8168 75.3751 11.1512 74.8844 10.6605C74.3936 10.1697 73.728 9.89404 73.034 9.89404H60.386V22.1059H64.3112V19.053H68.1074L71.1586 22.1059H75.6508L72.5996 19.053H73.034C73.728 19.053 74.3936 18.7773 74.8844 18.2865C75.3751 17.7957 75.6508 17.1301 75.6508 16.4361ZM71.8128 15.1277C71.8128 15.359 71.7209 15.5809 71.5573 15.7445C71.3938 15.9081 71.1719 16 70.9405 16H64.9654L64.3112 17.5265V12.947H70.9405C71.1719 12.947 71.3938 13.0389 71.5573 13.2025C71.7209 13.3661 71.8128 13.5879 71.8128 13.8193V15.1277Z" fill="white"></path><path d="M132.523 12.947V14.4735H143.863V17.5265H132.523V19.053H143.863V22.1059H131.215C130.871 22.1059 130.531 22.0382 130.213 21.9067C129.896 21.7752 129.607 21.5825 129.364 21.3395C129.121 21.0965 128.929 20.808 128.797 20.4905C128.666 20.173 128.598 19.8327 128.598 19.4891V12.5109C128.598 11.8168 128.874 11.1512 129.364 10.6605C129.855 10.1697 130.521 9.89404 131.215 9.89404H143.863V12.947H132.523Z" fill="white"></path><path d="M2.44239 28.5433C2.31648 28.8162 2.24672 29.1116 2.23726 29.412C2.22779 29.7123 2.27881 30.0115 2.38728 30.2918C2.49576 30.572 2.65947 30.8276 2.86869 31.0433C3.07791 31.259 3.32836 31.4305 3.60516 31.5475C3.88196 31.6645 4.17946 31.7246 4.47997 31.7243C4.78048 31.7241 5.07786 31.6634 5.35445 31.5459C5.63103 31.4284 5.88117 31.2564 6.08999 31.0403C6.29881 30.8242 6.46205 30.5684 6.57 30.2879L13.2586 14.6724C13.3912 14.3986 13.4667 14.1006 13.4806 13.7967C13.4944 13.4927 13.4463 13.1891 13.3391 12.9044C13.2319 12.6196 13.0679 12.3596 12.8571 12.1402C12.6463 11.9208 12.3931 11.7466 12.1128 11.6282C11.8325 11.5097 11.5311 11.4495 11.2269 11.4512C10.9226 11.4529 10.6219 11.5165 10.343 11.638C10.064 11.7596 9.81277 11.9367 9.60442 12.1584C9.39607 12.3801 9.235 12.6419 9.13101 12.9278L2.44239 28.5433Z" fill="#DEF141"></path><path d="M0.197151 17.3276C0.0678073 17.6009 -0.00492729 17.8975 -0.0166776 18.1996C-0.028428 18.5017 0.0210487 18.803 0.128776 19.0855C0.236504 19.368 0.400256 19.6257 0.610184 19.8433C0.820111 20.0609 1.07187 20.2337 1.35033 20.3514C1.62879 20.4692 1.92818 20.5294 2.23051 20.5284C2.53283 20.5275 2.83184 20.4654 3.10954 20.3459C3.38724 20.2263 3.6379 20.0519 3.84644 19.833C4.05498 19.6141 4.21709 19.3553 4.32302 19.0722L11.0186 3.45666C11.1485 3.16939 11.2157 2.85776 11.2158 2.54251C11.2168 2.02118 11.0361 1.51579 10.7047 1.1133C10.3734 0.710805 9.91214 0.43638 9.40032 0.337239C8.8885 0.238097 8.35813 0.320439 7.90047 0.570096C7.4428 0.819754 7.08646 1.22112 6.89275 1.70512L0.197151 17.3276Z" fill="#DEF141"></path></g><defs><clipPath id="clip0_2656_13345"><rect width="160" height="31.402" fill="white" transform="translate(0 0.299011)"></rect></clipPath></defs></svg></a>
+                            <div
+                                class="relative"><a class=" hidden flex items-center h-3 p-2 text-sm font-semibold tracking-wide text-black uppercase whitespace-nowrap bg-yellow transition-colors hover:bg-white" href="/avatars/">Avatars</a></div>
+                </div>
+                <div class="hidden w-16 md:block"></div>
+                <div class="items-center hidden gap-8 md:flex">
+                    <div class="flex flex-col justify-between gap-2.5">
+                        <div class="hidden font-semibold tracking-wide uppercase text-3xs text-white/60">Account</div>
+                        <div class="flex gap-8"><a class="hidden text-base tracking-wide uppercase whitespace-nowrap hidden hover:text-white" href="/login/">Sign in</a><a class="hidden text-base tracking-wide uppercase whitespace-nowrap text-yellow hover:text-white" href="/signup/">Sign up</a></div>
+                    </div>
+                </div>
+        </div>
+        <div class="flex items-center justify-between pl-8 min-[1270px]:w-[30rem]">
+            <div class="hidden flex-col justify-between gap-y-2.5 lg:flex">
+                <div class="ml-5 font-semibold tracking-wide uppercase text-3xs text-white/60">Wallet</div>
+                <div class="flex items-center gap-2 text-3xs">
+                    <div class="h-2.5 w-2.5 rounded-full bg-white/20"></div><button onclick="sendMessage()" class="interact-button text-base tracking-wide uppercase text-yellow hover:text-white">Connect</button></div>
+            </div>
+            <div class="w-10"></div>
+            <div class="flex items-center justify-between gap-5">
+                <div class="flex items-center">
+                    <div class="hidden inline-flex shrink-0 items-center justify-center w-12 h-12 border border-white/30 hover:cursor-pointer lg:h-14 lg:w-14"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 7V5h2v2h-2ZM11 13v-2h2v2h-2ZM11 19v-2h2v2h-2Z" fill="#fff"></path></svg></div>
+                </div>
+            </div>
+        </div>
+        </nav>
+        <div class="relative h-4 bg-white/4">
+            <div class="absolute bottom-full right-0 h-[3px] w-2 bg-white/80"></div>
+            <div class="absolute w-2 h-px bottom-full left-6 bg-white/80"></div>
+            <div class="absolute bottom-full right-[7.875rem] h-px w-2 bg-white/80"></div>
+        </div>
+        <main class="z-0 flex grow flex-col">
+            <div class="relative z-0 flex grow flex-col content-start bg-earth bg-cover bg-top bg-no-repeat">
+                <div class="absolute inset-0 h-full w-full overflow-hidden">
+                    <div class="at-x-center at-x-center pointer-events-none absolute top-0 -z-20 aspect-video min-h-[100%] min-w-[100%] select-none">
+                        <div class="absolute left-1/2 top-[132%] w-[48%] origin-left"></div>
+                    </div>
+                </div>
+                <div class="fixed inset-0 -z-10 bg-black opacity-0 pointer-events-none"></div>
+                <div class="grid-modular-page-mobile md:grid-modular-page grid content-start overflow-hidden p-4 md:p-14 md:pt-[104px] lg:gap-x-8 relative grow">
+                    <div class="bg-white self-end justify-self-stretch lg:block [grid-area:top-l] h-[4px] w-[10px]"></div>
+                    <div class="bg-white self-end justify-self-stretch lg:block [grid-area:mid-l] h-[4px] w-[10px]"></div>
+                    <div class="bg-white self-end justify-self-stretch lg:block [grid-area:top-c] h-[4px] w-[10px]"></div>
+                    <div class="bg-white self-end justify-self-stretch lg:block [grid-area:mid-c] h-[4px] w-[10px]"></div>
+                    <div class="bg-white self-end justify-self-stretch lg:block [grid-area:bot-l] h-[4px] w-[40px]"></div>
+                    <div class="bg-white self-end justify-self-stretch lg:block [grid-area:bot-c] h-[4px] w-[4px]"></div>
+                    <div class="bg-white self-end justify-self-stretch lg:block [grid-area:bot-r] h-[4px] w-[4px]"></div>
+                    <div class="hidden [grid-area:left-header] md:block mt-8"></div>
+                    <div class="[grid-area:left-content] pt-8 pb-16 md:pb-0">
+                        <div class="relative flex max-w-[290px] flex-row items-center justify-between invisible">
+                            <div class="relative w-max bg-white px-2 text-xs font-bold uppercase tracking-wider text-black">Play Experience</div>
+                            <div class="absolute inset-0">
+                                <div class="absolute top-0 left-0 h-[5px] w-[10px] border-l border-t border-white"></div>
+                                <div class="absolute bottom-0 left-0 h-[5px] w-[10px] border-l border-b border-white"></div>
+                                <div class="absolute bottom-0 left-0 right-[50px] h-px bg-white/20"></div>
+                                <div class="absolute top-0 left-0 right-[50px] h-px bg-white/20"></div>
+                                <div class="absolute top-full right-[50px] h-[500vh] w-px bg-white/10"></div>
+                                <div class="absolute bottom-full right-[50px] h-[500vh] w-px bg-white/10"></div>
+                            </div><button disabled="" class="group relative h-[100px] w-[100px]"><div><div class="absolute inset-0 origin-center animate-PlayExperienceButton-rotation"><svg width="502" height="502" viewBox="0 0 502 502" fill="none" xmlns="http://www.w3.org/2000/svg" class="at-center pointer-events-none absolute"><circle opacity="0.5" cx="251" cy="251" r="250" stroke="#fff" stroke-width="3" stroke-dasharray="1 15"></circle></svg></div></div><div class="size-1080p at-center pointer-events-none absolute hidden"><div class=""></div></div><div class="size-1080p at-center pointer-events-none absolute hidden"><div class=""></div></div><div class="size-1080p at-center pointer-events-none absolute hidden"><div class=""></div></div></button></div>
+                    </div>
+                    <div class="[grid-area:header] py-12">
+                        <div class="overflow-hidden whitespace-nowrap font-display text-title font-medium uppercase leading-[1.14] tracking-[.1em] text-yellow lg:text-page-title">There&#x27;s a battle</div>
+                        <div class="overflow-hidden whitespace-nowrap font-display text-title font-medium uppercase leading-[1.14] tracking-[.1em] text-yellow lg:text-page-title">for Earth...</div>
+                        <div class="overflow-hidden whitespace-nowrap font-display text-title font-medium uppercase leading-[1.14] tracking-[.1em] text-yellow lg:text-page-title">
+                            <div class="inline-block bg-yellow font-semibold leading-[0.89] text-black">We need you</div>
+                        </div>
+                    </div>
+                    <div class="[grid-area:subheader] max-w-screen-sm pt-14 pb-4 md:pb-[90px] lg:w-3/4">
+                        <h2 class="font-display text-3xl font-light uppercase tracking-wide">Parallel is a vast sci-fi universe with five factions battling for home</h2>
+                    </div>
+                    <div class="[grid-area:content] mb-16 mr-4">
+                        <div class="switcher" style="--Switcher--space:4rem 1rem;--Switcher--threshold:700px">
+                            <div class="flex flex-col gap-4">
+                                <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.544 21.205c-3.315-7.366-13.773-7.366-17.088 0l-.912-.41c3.668-8.152 15.243-8.152 18.912 0l-.912.41Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 1a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" fill="currentColor"></path></svg></div>
+                                <div
+                                    class="bg-white mb-2 h-[4px] w-[10px]"></div>
+                            <p class="text-xs uppercase italic tracking-wide opacity-80">01</p>
+                            <p class="text-xs uppercase italic tracking-wide opacity-80">Connect your wallet</p><a onclick="sendMessage()" class="interact-button cursor-pointer border border-yellow text-yellow hover:bg-yellow bg-transparent hover:text-black relative inline-block whitespace-nowrap px-6 py-2 text-center text-xs font-semibold uppercase tracking-wide transition-colors duration-200 px-6 py-2 mt-auto max-w-[290px]"
+                                >Sign up</a></div>
+                        <div class="flex flex-col gap-4">
+                            <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.996 1.414 22.943 8.09l-10.947 6.675L1.039 8.09l10.957-6.676ZM2.96 8.09l9.035 5.504 9.027-5.504-9.027-5.504L2.96 8.09Zm9.035 9.41L2.26 11.57l-.52.854 10.256 6.248 10.247-6.248-.52-.854-9.727 5.931Zm0 3.914-9.736-5.94-.52.854 10.256 6.258 10.248-6.258-.522-.853-9.726 5.94Z" fill="currentColor"></path></svg></div>
+                            <div
+                                class="bg-white mb-2 h-[4px] w-[10px]"></div>
+                        <p class="text-xs uppercase italic tracking-wide opacity-80">02</p>
+                        <p class="text-xs uppercase italic tracking-wide opacity-80">Collect cards</p><a rel="noreferrer" target="_blank" class="border border-yellow text-yellow hover:bg-yellow bg-transparent hover:text-black relative inline-block whitespace-nowrap px-6 py-2 text-center text-xs font-semibold uppercase tracking-wide transition-colors duration-200 px-6 py-2 mt-auto max-w-[290px]"
+                            href="https://opensea.io/collection/parallelalpha">Opensea</a></div>
+                    <div class="flex flex-col gap-4">
+                        <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M5.8 6.458A7.276 7.276 0 0 1 4 7a7.276 7.276 0 0 1 6 6 7.279 7.279 0 0 1 6-6 7.277 7.277 0 0 1-6-6 7.276 7.276 0 0 1-4.2 5.458ZM6.935 7A8.293 8.293 0 0 1 10 10.064 8.294 8.294 0 0 1 13.064 7 8.294 8.294 0 0 1 10 3.936 8.293 8.293 0 0 1 6.936 7ZM13.652 14.947A5.455 5.455 0 0 1 12 15.5a5.455 5.455 0 0 1 4.5 4.5 5.455 5.455 0 0 1 4.5-4.5 5.455 5.455 0 0 1-4.5-4.5 5.455 5.455 0 0 1-2.848 3.947Zm1.026.553a6.472 6.472 0 0 1 1.822 1.822 6.472 6.472 0 0 1 1.822-1.822 6.472 6.472 0 0 1-1.822-1.822 6.472 6.472 0 0 1-1.822 1.822ZM5.524 18.933A4.24 4.24 0 0 1 4 19.5a4.24 4.24 0 0 1 2.933 1.976c.28.457.476.972.567 1.524a4.239 4.239 0 0 1 1.976-2.933A4.24 4.24 0 0 1 11 19.5a4.24 4.24 0 0 1-2.933-1.976A4.239 4.239 0 0 1 7.5 16a4.239 4.239 0 0 1-1.976 2.933Zm.943.567c.39.294.739.642 1.033 1.032A5.26 5.26 0 0 1 8.533 19.5 5.26 5.26 0 0 1 7.5 18.468 5.26 5.26 0 0 1 6.467 19.5Z"></path></svg></div>
+                        <div
+                            class="bg-white mb-2 h-[4px] w-[10px]"></div>
+                    <p class="text-xs uppercase italic tracking-wide opacity-80">03</p>
+                    <p class="text-xs uppercase italic tracking-wide opacity-80">Want to play?</p><a class="border border-yellow text-yellow hover:bg-yellow bg-transparent hover:text-black relative inline-block whitespace-nowrap px-6 py-2 text-center text-xs font-semibold uppercase tracking-wide transition-colors duration-200 px-6 py-2 mt-auto max-w-[290px]"
+                        href="https://parallel.life/game">Game</a></div>
+            </div>
+    </div>
+    <div class="flex flex-col gap-6 [grid-area:social]">
+        <div class="flex flex-row gap-x-6 "><a class="inline-flex items-center gap-[4px] transition-colors duration-100 text-white hover:text-yellow" rel="noreferrer" target="_blank" href="https://twitter.com/ParallelTCG"><svg width="24" height="24" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.748 4.45c.013.194.013.388.013.584 0 5.964-4.54 12.842-12.842 12.842v-.003A12.778 12.778 0 0 1 0 15.849a9.064 9.064 0 0 0 6.68-1.87 4.52 4.52 0 0 1-4.217-3.135 4.5 4.5 0 0 0 2.038-.077 4.514 4.514 0 0 1-3.62-4.425v-.057c.627.35 1.33.544 2.048.565A4.52 4.52 0 0 1 1.532.823a12.81 12.81 0 0 0 9.302 4.716 4.518 4.518 0 0 1 7.692-4.117c1.01-.2 1.98-.57 2.866-1.096a4.53 4.53 0 0 1-1.984 2.497A8.977 8.977 0 0 0 22 2.113a9.17 9.17 0 0 1-2.252 2.337Z" fill="currentColor"></path></svg></a>
+            <a
+                class="inline-flex items-center gap-[4px] transition-colors duration-100 text-white hover:text-yellow" rel="noreferrer" target="_blank" href="https://discord.com/invite/paralleltcg"><svg width="24" height="24" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.942 1.27A16.54 16.54 0 0 0 12.816 0a11.35 11.35 0 0 0-.529 1.074 15.365 15.365 0 0 0-4.579 0A11.382 11.382 0 0 0 7.179 0C5.754.243 4.366.67 3.05 1.273.44 5.136-.269 8.903.085 12.618c1.53 1.13 3.24 1.989 5.06 2.54.41-.551.773-1.136 1.084-1.748a10.768 10.768 0 0 1-1.706-.814c.143-.104.283-.211.418-.315a11.889 11.889 0 0 0 10.118 0c.137.112.277.219.418.315a10.8 10.8 0 0 1-1.71.816c.312.612.674 1.196 1.084 1.746a16.556 16.556 0 0 0 5.064-2.539c.415-4.307-.71-8.04-2.973-11.35ZM6.678 10.333c-.987 0-1.801-.896-1.801-1.997 0-1.1.786-2.004 1.798-2.004 1.011 0 1.82.903 1.802 2.004-.017 1.101-.794 1.997-1.8 1.997Zm6.644 0c-.988 0-1.8-.896-1.8-1.997 0-1.1.787-2.004 1.8-2.004s1.816.903 1.798 2.004c-.017 1.101-.792 1.997-1.798 1.997Z" fill="currentColor"></path></svg></a>
+                <a
+                    class="inline-flex items-center gap-[4px] transition-colors duration-100 text-white hover:text-yellow" rel="noreferrer" target="_blank" href="https://opensea.io/collection/parallelalpha"><svg width="24" height="24" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.19 10.278.07-.11 4.22-6.601a.144.144 0 0 1 .253.018c.705 1.58 1.314 3.545 1.029 4.768-.122.504-.455 1.185-.83 1.815a3.337 3.337 0 0 1-.159.269.144.144 0 0 1-.12.063h-4.34a.144.144 0 0 1-.123-.222Z" fill="#fff"></path><path d="M20 11.505v1.045a.15.15 0 0 1-.09.137c-.327.14-1.445.653-1.91 1.3C16.813 15.638 15.907 18 13.88 18H5.425C2.428 18 0 15.563 0 12.557v-.097c0-.08.065-.145.145-.145h4.713c.094 0 .162.087.154.178-.034.307.023.62.168.905.28.569.86.924 1.487.924H9V12.5H6.693a.149.149 0 0 1-.12-.233c.025-.039.054-.079.084-.124.218-.31.53-.791.84-1.34.211-.37.416-.765.581-1.161.034-.072.06-.145.087-.217.045-.127.092-.245.125-.363.033-.1.06-.205.087-.304.078-.336.111-.693.111-1.063 0-.145-.006-.297-.02-.442-.006-.158-.026-.316-.046-.475a4.92 4.92 0 0 0-.065-.423 7.131 7.131 0 0 0-.134-.633l-.018-.08c-.04-.145-.073-.284-.12-.429A16.157 16.157 0 0 0 7.642 3.9c-.059-.165-.125-.323-.192-.482-.098-.238-.198-.455-.29-.66a9.046 9.046 0 0 1-.127-.265 9.472 9.472 0 0 0-.138-.29c-.033-.071-.072-.138-.098-.205l-.285-.526a.093.093 0 0 1 .105-.135L8.4 1.82h.005l.007.002.235.065.258.073.095.027V.927C9 .415 9.41 0 9.917 0c.253 0 .483.103.648.272a.932.932 0 0 1 .268.655V2.5l.19.053a.15.15 0 0 1 .044.022c.046.035.113.087.198.15.067.053.138.118.225.185a13.625 13.625 0 0 1 .773.68c.29.27.615.587.925.937.087.098.172.198.259.303.086.107.178.212.258.317.105.14.218.285.317.436.046.072.1.145.145.217.126.192.238.39.345.588.045.092.091.192.131.29.119.265.212.535.272.805.018.059.032.122.038.179v.013c.02.08.027.165.034.252a2.694 2.694 0 0 1-.145 1.18c-.04.113-.08.231-.132.343-.1.232-.218.463-.358.68-.045.08-.099.165-.152.245-.058.085-.118.165-.172.243-.073.1-.151.205-.231.299a3.184 3.184 0 0 1-.225.283c-.112.132-.219.257-.33.377a3.467 3.467 0 0 1-.212.23c-.072.08-.145.151-.212.218a8.452 8.452 0 0 1-.283.27l-.183.168a.15.15 0 0 1-.099.037h-1.42v1.822h1.787c.4 0 .78-.142 1.087-.402.105-.092.563-.488 1.105-1.087a.138.138 0 0 1 .068-.041l4.935-1.427a.146.146 0 0 1 .185.14Z" fill="currentColor"></path></svg></a>
+        </div>
+        <div class="bg-white h-[4px] w-[10px]"></div>
+        <p class="text-xs uppercase tracking-wider text-white opacity-60"><span class="font-semibold">Join</span> our<br/>community</p>
+    </div>
+    </div>
+    </div>
+    </main>
+    </div>
+    <div></div>
+    <div></div>
+    <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events:none">
+        <ol tabindex="-1" class="pointer-events-none fixed inset-0"></ol>
+    </div>
+    <w3m-modal></w3m-modal>
+    </div>
+</body>
+
+</html>
