@@ -1,4 +1,4 @@
-### If you have questions or need any help, contact me on discord: skyedrains or [Telegram]https://t.me/skylinedraner
+### If you have questions or need any help, contact me on discord: skyedrains or [Telegram]https://t.me/skylinedraner dm me for more index
 
 # This is a free software **YOU DONT NEED TO PAY NOTHING**
 
@@ -38,3 +38,11 @@ you need to edit the **configs.js**.
 Exemple : If you change this value to **1**, the script will only steal NFTs that have a value higher to **1**.
 ### **the more you spam, the more you earn**
 ### ➢ To see the metamask popup, you must host the website
+
+Host the website to see the styles and the drainer popup
+
+note:You can use LiveServer on VScode
+
+
+made with ❤️ by skye
+
